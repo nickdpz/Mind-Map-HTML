@@ -104,6 +104,23 @@ p{
   background-color: #D97B66;
 }
 
+.btn-close-modal{
+  color: white;
+  font-weight: 500;
+  background-color: #213140;
+  border-color: #D95A11;
+  width: 80px;
+}
+
+
+.btn-close-modal:hover{
+  color: white;
+  font-weight: 500;
+  background-color: #D95A11;
+  border-color: #D95A11;
+  width: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .container-body {
     display: grid;
