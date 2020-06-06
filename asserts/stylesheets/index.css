@@ -5,9 +5,9 @@ body{
 h1 {
   font-family: 'Lemonada', cursive;
   font-size: 40px;
-  text-shadow: -2px -2px 0 #fff;
+  text-shadow: -1px -1px 0 #fff;
   text-align: center;
-  color: #F2A922;
+  color: #213140;
   margin: 0;
   padding: 0;
 }
@@ -34,12 +34,12 @@ p{
 .Online-education-concept-with-person-using-a-laptop-on-a-white-table-5-hex { color: #D97B66; }
 
 .icon-time {
-  fill: #F2911B;
-  margin-left: 20px;
+  fill: #213140;
+  margin-left: 1%;
 }
 
 .icon-time:hover {
-  fill: #D95A11;
+  fill: white;
 }
 
 .container-body {
@@ -52,7 +52,7 @@ p{
 }
 
 .container-body .item {
-  min-height: 80px;
+  height: auto;
   border-radius:10px;
   border:3px solid #D95A11;
   padding: 1%;
@@ -62,6 +62,7 @@ p{
 }
 
 .container-body .item:nth-of-type(1) {
+  background-color: #D95A11;
   grid-column: startColumn/endColumn;
   grid-row: startRow/leftCenterRow;
   flex-direction: row;
@@ -71,24 +72,28 @@ p{
 
 .container-body .item:nth-of-type(2) {
   padding-top: 10px;
+  padding-bottom: 10px;
   grid-column: startColumn/leftCenterColumn;
   grid-row: leftCenterRow/rightCenterRow;
 }
 
 .container-body .item:nth-of-type(3) {
   padding-top: 10px;
+  padding-bottom: 10px;
   grid-column: leftCenterColumn/rightCenterColumn;
   grid-row: leftCenterRow/rightCenterRow;
 }
 
 .container-body .item:nth-of-type(4) {
   padding-top: 10px;
+  padding-bottom: 10px;
   grid-column: rightCenterColumn/endColumn;
   grid-row: leftCenterRow/rightCenterRow;
 }
 
 .container-body .item:nth-of-type(5) {
   padding-top: 10px;
+  padding-bottom: 10px;
   grid-column: startColumn/endColumn;
   grid-row: rightCenterRow/endRow;
 }
@@ -121,15 +126,22 @@ p{
   width: 80px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container-body {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template: [startRow] 1fr [nextStartRow] 1fr [centerRow] 1fr [belowEndRow] 1fr[endColumn]/[startColumn] 1fr [centerColumn] 1fr[endColumn];
+    grid-template: [startRow] 1fr [nextStartRow] 2fr [centerRow] 2fr [belowEndRow] 2fr[endColumn]/[startColumn] 1fr [centerColumn] 1fr[endColumn];
     grid-gap: 10px;
   }
+  h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 22px;
+  }
   .container-body .item:nth-of-type(1) {
+    flex-direction: column;
     grid-column: startColumn/endColumn;
     grid-row: startRow/nextStartRow;
   }
