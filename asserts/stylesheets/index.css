@@ -1,13 +1,13 @@
 body{
-  background-color: #213140;
+  background-color: #fefefe;
 }
 
 h1 {
   font-family: 'Lemonada', cursive;
   font-size: 40px;
-  text-shadow: -1px -1px 0 #fff;
+  text-shadow: -1px -1px 0 #6b40cc;
   text-align: center;
-  color: #213140;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -18,20 +18,20 @@ h2 {
   font-size: 25px;
   text-shadow: -1px -1px 0 #000;
   text-align: center;
-  color:#F2911B;
+  color:#c171df;
   padding: 0;
 }
 
 p{
   font-family: 'Lato', sans-serif;
-  color:white;
+  color:#000;
 }
 /* Color Theme Swatches in Hex */
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-1-hex { color: #213140; }
+.Online-education-concept-with-person-using-a-laptop-on-a-white-table-1-hex { color: #fefefe; }
 .Online-education-concept-with-person-using-a-laptop-on-a-white-table-2-hex { color: #F2A922; }
 .Online-education-concept-with-person-using-a-laptop-on-a-white-table-3-hex { color: #F2911B; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-4-hex { color: #D95A11; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-5-hex { color: #D97B66; }
+.Online-education-concept-with-person-using-a-laptop-on-a-white-table-4-hex { color: #9a65fb; }
+.Online-education-concept-with-person-using-a-laptop-on-a-white-table-5-hex { color: #9c5cce; }
 
 .container-body {
   display: grid;
@@ -45,14 +45,14 @@ p{
 .container-body .item {
   height: auto;
   border-radius:10px;
-  border:3px solid #D95A11;
+  border:3px solid #9a65fb;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container-body .item:nth-of-type(1) {
-  background-color: #D95A11;
+  background-color: #9a65fb;
   grid-column: startColumn/endColumn;
   grid-row: startRow/leftCenterRow;
   flex-direction: row;
@@ -89,19 +89,19 @@ p{
 .btn-open-modal{
   color: white;
   font-weight: 500;
-  background-color: #D95A11;
-  border-color: #D95A11;
+  background-color: #9a65fb;
+  border-color: #9a65fb;
   width: 80px;
 }
 .btn-open-modal:hover{
-  background-color: #D97B66;
+  background-color: #9c5cce;
 }
 
 .btn-close-modal{
   color: white;
   font-weight: 500;
-  background-color: #213140;
-  border-color: #D95A11;
+  background-color: #fefefe;
+  border-color: #9a65fb;
   width: 80px;
 }
 
@@ -109,8 +109,8 @@ p{
 .btn-close-modal:hover{
   color: white;
   font-weight: 500;
-  background-color: #D95A11;
-  border-color: #D95A11;
+  background-color: #9a65fb;
+  border-color: #9a65fb;
   width: 80px;
 }
 
@@ -121,7 +121,7 @@ p{
 /* Icons */
 
 .icon-time {
-  fill: #213140;
+  fill: #fefefe;
   margin-left: 1%;
 }
 
