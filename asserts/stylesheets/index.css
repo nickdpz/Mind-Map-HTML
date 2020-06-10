@@ -33,15 +33,6 @@ p{
 .Online-education-concept-with-person-using-a-laptop-on-a-white-table-4-hex { color: #D95A11; }
 .Online-education-concept-with-person-using-a-laptop-on-a-white-table-5-hex { color: #D97B66; }
 
-.icon-time {
-  fill: #213140;
-  margin-left: 1%;
-}
-
-.icon-time:hover {
-  fill: white;
-}
-
 .container-body {
   display: grid;
   width: 100%;
@@ -55,7 +46,6 @@ p{
   height: auto;
   border-radius:10px;
   border:3px solid #D95A11;
-  padding: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,29 +61,27 @@ p{
 }
 
 .container-body .item:nth-of-type(2) {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px;
   grid-column: startColumn/leftCenterColumn;
   grid-row: leftCenterRow/rightCenterRow;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-body .item:nth-of-type(3) {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px;
   grid-column: leftCenterColumn/rightCenterColumn;
   grid-row: leftCenterRow/rightCenterRow;
 }
 
 .container-body .item:nth-of-type(4) {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px;
   grid-column: rightCenterColumn/endColumn;
   grid-row: leftCenterRow/rightCenterRow;
 }
 
 .container-body .item:nth-of-type(5) {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px;
   grid-column: startColumn/endColumn;
   grid-row: rightCenterRow/endRow;
 }
@@ -124,6 +112,31 @@ p{
   background-color: #D95A11;
   border-color: #D95A11;
   width: 80px;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+/* Icons */
+
+.icon-time {
+  fill: #213140;
+  margin-left: 1%;
+}
+
+.icon-time:hover {
+  fill: white;
+}
+
+.icon-intro {
+  align-self: center;
+  -webkit-animation-name: changeColorLive;
+  animation-name: changeColorLive;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 1024px) {
@@ -167,21 +180,15 @@ p{
   }
 }
 
-@keyframes color {
+@keyframes changeColorLive {
   0% {
-    background-color: #28287c;
-  }
-  25% {
-    background-color: #1b1b49;
+    fill: #12360b;
   }
   50% {
-    background-color: #1B1B25;
-  }
-  75% {
-    background-color: #1b1b49;
+    fill: #28b30d;
   }
   100% {
-    background-color: #28287c;
+    fill: #12360b;
   }
 }
 
