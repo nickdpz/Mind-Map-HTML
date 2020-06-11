@@ -1,10 +1,12 @@
 body{
-  background-color: #213140;
+  background: url('../images/wave.svg'),  linear-gradient(to bottom, #5f97bd, #b2d4eb, #fefefe, #fff);
+  background-repeat: no-repeat;
+  background-position:bottom ;
 }
 
 h1 {
   font-family: 'Lemonada', cursive;
-  font-size: 40px;
+  font-size: 50px;
   text-shadow: -1px -1px 0 #fff;
   text-align: center;
   color: #213140;
@@ -15,7 +17,7 @@ h1 {
 
 h2 {
   font-family: 'Lemonada', cursive;
-  font-size: 25px;
+  font-size: 35px;
   text-shadow: -1px -1px 0 #000;
   text-align: center;
   color:#F2911B;
@@ -24,36 +26,35 @@ h2 {
 
 p{
   font-family: 'Lato', sans-serif;
-  color:white;
+  color:#262626;
 }
 /* Color Theme Swatches in Hex */
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-1-hex { color: #213140; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-2-hex { color: #F2A922; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-3-hex { color: #F2911B; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-4-hex { color: #D95A11; }
-.Online-education-concept-with-person-using-a-laptop-on-a-white-table-5-hex { color: #D97B66; }
+/* Color Theme Swatches in Hex */
+.Grab-Redesign-16-1-hex { color: #7972A6; }
+.Grab-Redesign-16-2-hex { color: #9195D9; }
+.Grab-Redesign-16-3-hex { color: #c7d0d6; }
+.Grab-Redesign-16-4-hex { color: #EBF2F2; }
+.Grab-Redesign-16-5-hex { color: #262626; }
+
 
 .container-body {
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template: [startRow]1fr [leftCenterRow] 3fr [rightCenterRow] 2fr[end]/[startColumn] 1fr [leftCenterColumn] 2fr [rightCenterColumn] 1fr[endColumn];
+  grid-template: [startRow]1fr [leftCenterRow] 2fr [rightCenterRow] 2fr[endCenter] / [startColumn] 1fr [leftCenterColumn] 1fr [rightCenterColumn] 1fr[endColumn];
   grid-gap: 8px;
   padding:1%;
 }
 
 .container-body .item {
   height: auto;
-  border-radius:10px;
-  border:3px solid #D95A11;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container-body .item:nth-of-type(1) {
-  background-color: #D95A11;
-  grid-column: startColumn/endColumn;
+  grid-column: startColumn/leftCenterColumn;
   grid-row: startRow/leftCenterRow;
   flex-direction: row;
   align-items: center;
@@ -61,47 +62,64 @@ p{
 }
 
 .container-body .item:nth-of-type(2) {
+  grid-column: leftCenterColumn/endColumn;
+  grid-row: startRow/leftCenterRow;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 20%;
+}
+
+
+.container-body .item:nth-of-type(3) {
   padding: 10px 10px;
   grid-column: startColumn/leftCenterColumn;
   grid-row: leftCenterRow/rightCenterRow;
   align-items: center;
   justify-content: center;
-}
-
-.container-body .item:nth-of-type(3) {
-  padding: 10px 10px;
-  grid-column: leftCenterColumn/rightCenterColumn;
-  grid-row: leftCenterRow/rightCenterRow;
+  border-radius:10px;
+  border:3px solid #262626;
 }
 
 .container-body .item:nth-of-type(4) {
   padding: 10px 10px;
-  grid-column: rightCenterColumn/endColumn;
+  grid-column: leftCenterColumn/endColumn;
   grid-row: leftCenterRow/rightCenterRow;
+  border-radius:10px;
+  border:3px solid #262626;
 }
 
 .container-body .item:nth-of-type(5) {
   padding: 10px 10px;
-  grid-column: startColumn/endColumn;
+  grid-column: startColumn/rightCenterColumn;
   grid-row: rightCenterRow/endRow;
+  border-radius:10px;
+  border:3px solid #262626;
+}
+
+.container-body .item:nth-of-type(6) {
+  padding: 10px 10px;
+  grid-column: rightCenterColumn/endColumn;
+  grid-row: rightCenterRow/endRow;
+  border-radius:10px;
+  border:3px solid #262626;
 }
 
 .btn-open-modal{
   color: white;
   font-weight: 500;
-  background-color: #D95A11;
-  border-color: #D95A11;
+  background-color: #7972A6;
+  border-color: #7972A6;
   width: 80px;
 }
 .btn-open-modal:hover{
-  background-color: #D97B66;
+  background-color: #9195D9;
 }
 
 .btn-close-modal{
   color: white;
   font-weight: 500;
   background-color: #213140;
-  border-color: #D95A11;
+  border-color: #7972A6;
   width: 80px;
 }
 
@@ -109,8 +127,8 @@ p{
 .btn-close-modal:hover{
   color: white;
   font-weight: 500;
-  background-color: #D95A11;
-  border-color: #D95A11;
+  background-color: #7972A6;
+  border-color: #7972A6;
   width: 80px;
 }
 
@@ -127,6 +145,16 @@ p{
 
 .icon-time:hover {
   fill: white;
+}
+
+.icon-sunshine{
+  fill: #f8a805;
+  -webkit-animation-name: changeColorSunshine;
+  animation-name: changeColorSunshine;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .icon-intro {
@@ -189,6 +217,18 @@ p{
   }
   100% {
     fill: #12360b;
+  }
+}
+
+@keyframes changeColorSunshine {
+  0% {
+    fill: #e7d913;
+  }
+  50% {
+    fill: #b3870d;
+  }
+  100% {
+    fill: #e7d913;
   }
 }
 
