@@ -1,13 +1,13 @@
 body{
-  background: url('../images/building.svg'), #8f8f8a;
+  background-color: #fefefe;
+  background: url('../images/building.svg'),  #fefefe;
   background-repeat: no-repeat;
-  background-position:50%;
-  background-color: #8f8f8a;
+  background-position:bottom ;
 
 }
 
 h1 {
-  font-family: 'Lemonada', cursive;
+  font-family: 'Roboto Mono', monospace;
   font-size: 40px;
   text-shadow: -1px -1px 0 #6b40cc;
   text-align: center;
@@ -18,7 +18,7 @@ h1 {
 
 
 h2 {
-  font-family: 'Lemonada', cursive;
+  font-family: 'Roboto Mono', monospace;
   font-size: 25px;
   text-shadow: -1px -1px 0 #000;
   text-align: center;
@@ -27,7 +27,7 @@ h2 {
 }
 
 p{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color:#000;
 }
 /* Color Theme Swatches in Hex */
@@ -50,15 +50,12 @@ p{
 
 .container-body .item {
   height: auto;
-  border-radius:10px;
-  border:3px solid #9a65fb;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .container-body .item:nth-of-type(1) {
-  background-color: #9a65fb;
   grid-column: startColumn/leftCenterColumn;
   grid-row: startRow/leftCenterRow;
   flex-direction: row;
@@ -80,31 +77,39 @@ p{
   grid-row: leftCenterRow/rightCenterRow;
   align-items: center;
   justify-content: center;
+  border-radius:10px;
+  border:3px solid #BF9C88;
 }
 
 .container-body .item:nth-of-type(4) {
   padding: 10px 10px;
   grid-column: leftCenterColumn/endColumn;
   grid-row: leftCenterRow/rightCenterRow;
+  border-radius:10px;
+  border:3px solid #BF9C88;
 }
 
 .container-body .item:nth-of-type(5) {
   padding: 10px 10px;
   grid-column: startColumn/rightCenterColumn;
   grid-row: rightCenterRow/endRow;
+  border-radius:10px;
+  border:3px solid #BF9C88;
 }
 
 .container-body .item:nth-of-type(6) {
   padding: 10px 10px;
   grid-column: rightCenterColumn/endColumn;
   grid-row: rightCenterRow/endRow;
+  border-radius:10px;
+  border:3px solid #BF9C88;
 }
 
 .btn-open-modal{
   color: white;
   font-weight: 500;
-  background-color: #9a65fb;
-  border-color: #9a65fb;
+  background-color: #BF9C88;
+  border-color: #BF9C88;
   width: 80px;
 }
 .btn-open-modal:hover{
@@ -115,7 +120,7 @@ p{
   color: white;
   font-weight: 500;
   background-color: #fefefe;
-  border-color: #9a65fb;
+  border-color: #BF9C88;
   width: 80px;
 }
 
@@ -123,8 +128,8 @@ p{
 .btn-close-modal:hover{
   color: white;
   font-weight: 500;
-  background-color: #9a65fb;
-  border-color: #9a65fb;
+  background-color: #BF9C88;
+  border-color: #BF9C88;
   width: 80px;
 }
 
