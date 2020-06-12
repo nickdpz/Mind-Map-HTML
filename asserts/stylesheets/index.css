@@ -258,7 +258,7 @@ table.steelBlueCols tfoot .links a {
     display: grid;
     height: auto;
     width: 100%;
-    grid-template: [startRow] 1fr [nextStartRow] 2fr [centerRow] 2fr [belowEndRow] 2fr[endColumn]/[startColumn] 1fr [centerColumn] 1fr[endColumn];
+    grid-template: [startRow] 1fr [nextStartRow] 2fr [centerStartRow] 4fr [centerEndRow] 3fr [belowEndRow] 3fr[endColumn]/[startColumn] 1fr [centerColumn] 1fr[endColumn];
     grid-gap: 10px;
   }
   h1 {
@@ -272,25 +272,43 @@ table.steelBlueCols tfoot .links a {
     grid-column: startColumn/endColumn;
     grid-row: startRow/nextStartRow;
   }
+  .container-body .item:nth-of-type(2) {
+    padding-top: 10px;
+    grid-column: startColumn/endColumn;
+    grid-row: centerEndRow/centerEndRow;
+  }
   .container-body .item:nth-of-type(3) {
     padding-top: 10px;
     grid-column: startColumn/endColumn;
-    grid-row: nextStartRow/centerRow;
-  }
-  .container-body .item:nth-of-type(2) {
-    padding-top: 10px;
-    grid-column: startColumn/centerColumn;
-    grid-row: centerRow/belowEndRow;
+    grid-row: nextStartRow/centerStartRow;
   }
   .container-body .item:nth-of-type(4) {
     padding-top: 10px;
-    grid-column: centerColumn/endColumn;
-    grid-row: centerRow/belowEndRow;
+    grid-column: startColumn/endColumn;
+    grid-row: centerStartRow/centerEndRow;
   }
   .container-body .item:nth-of-type(5) {
     padding-top: 10px;
     grid-column: startColumn/endColumn;
+    grid-row: centerEndRow/endRow;
+  }
+  .container-body .item:nth-of-type(6) {
+    padding-top: 10px;
+    grid-column: startColumn/endColumn;
     grid-row: belowEndRow/endRow;
+  }
+  .icon-intro{
+    display: none;
+  }
+  .container-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  .item{
+    margin-top: 10px;
   }
 }
 
